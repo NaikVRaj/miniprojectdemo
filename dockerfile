@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM ubuntu:latest
 EXPOSE 8080
 RUN apt-get update && \
     apt-get install -y openjdk-17-jre
