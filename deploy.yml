@@ -20,7 +20,7 @@
 #         state: started
 #     - name: Running container
 #       shell: docker run -it -d --name calculator naikvraj/devops-integration
-
+---
 - name: Pull Docker Image from Docker Hub
   hosts: localhost
   emote_user: vraj-naik
