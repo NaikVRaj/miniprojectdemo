@@ -2,6 +2,7 @@
 - name: Pull Docker Image from Docker Hub
   hosts: localhost
   remote_user: vraj-naik
+  gather_facts: no
   become: false
   tasks:
     - name: Pull Docker Image
@@ -20,3 +21,8 @@
         state: started
     - name: Running container
       shell: docker run -it -d --name calculator naikvraj/devops-integration
+
+    
+    - name: Disable host key checking
+      ansible.builtin.set_fact:
+        ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
