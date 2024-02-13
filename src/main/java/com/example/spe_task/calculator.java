@@ -135,10 +135,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class Calculator {
+public class calculator {
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        SpringApplication.run(Calculator.class, args);
+        SpringApplication.run(calculator.class, args);
 
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
             while (true) {
