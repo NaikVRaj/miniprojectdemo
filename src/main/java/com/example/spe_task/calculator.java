@@ -1,6 +1,6 @@
 package com.example.spe_task;
 
-// import java.lang.Math;
+import java.lang.Math;
 // import java.io.*;
 
 // import org.springframework.boot.SpringApplication;
