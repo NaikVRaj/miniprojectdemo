@@ -135,7 +135,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class calculator {
+public class Calculator {
 
     public static void main(String[] args) throws IOException, InterruptedException {
         SpringApplication.run(Calculator.class, args);
