@@ -201,6 +201,7 @@ public class calculator {
                         break;
                     case "0":
                         System.out.println("\nExiting Program...");
+                        System.exit(0);
                         return;
                     default:
                         System.out.println("\nInvalid choice! Please try again.");
