@@ -1,15 +1,19 @@
 package com.example.spe_task;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach; // Added import for @BeforeEach
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class SpeTaskApplicationTests {
+	private calculator calculator; // Assuming you have a Calculator class
 
+		@BeforeEach // Added to initialize calculator before each test
+		public void setUp() {
+			calculator = new calculator();
+		}
 		@Test
 		public void testPerformAddition() {
 			double result = calculator.performAddition(3, 4);
