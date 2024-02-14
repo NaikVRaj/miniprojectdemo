@@ -6,14 +6,14 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<!-- Update to the appropriate version of Spring Boot -->
-		<version>3.2.2</version>
+		<version>3.2.2</version> <!-- Updated Spring Boot version -->
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
 	<groupId>com.example</groupId>
-	<artifactId>Spe_task</artifactId>
+	<artifactId>spe-task</artifactId> <!-- Updated artifactId to use hyphens instead of underscores -->
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Spe_task</name>
+	<name>spe-task</name>
 	<description>Spe_task</description>
 	<properties>
 		<!-- Update to the appropriate Java version -->
