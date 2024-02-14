@@ -5,52 +5,39 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<!-- Update to the appropriate version of Spring Boot -->
-		<version>3.2.2</version> <!-- Updated Spring Boot version -->
+		<version>3.2.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
+	</parent> <!-- Closing tag was missing the angle bracket here -->
 
 	<groupId>com.example</groupId>
-	<artifactId>spe-task</artifactId> <!-- Updated artifactId to use hyphens instead of underscores -->
+	<artifactId>Spe_task</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spe-task</name>
+	<name>Spe_task</name>
 	<description>Spe_task</description>
 	<properties>
-		<!-- Update to the appropriate Java version -->
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
 		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-api</artifactId>
-			<version>5.10.1</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<repositories>
-		<repository>
-			<id>central</id>
-			<url>https://repo.maven.apache.org/maven2</url>
-		</repository>
-		<!-- Add additional repositories if needed -->
-	</repositories>
+
 	<build>
 		<plugins>
-			<!-- Spring Boot Maven Plugin -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<!-- Set the finalName to the desired value -->
-		<finalName>spe-task</finalName>
+		<finalName>devops-integration</finalName>
 	</build>
+
 </project>
